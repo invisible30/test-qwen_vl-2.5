@@ -13,7 +13,9 @@ response = client.chat.completions.create(
                 {
                     "type": "image_url",
                     # "image_url": {"url": "https://modelscope.oss-cn-beijing.aliyuncs.com/demo/images/bird-vl.jpg"}   
-                    "image_url": {"url": "https://raw.githubusercontent.com/invisible30/test-qwen_vl-2.5/main/qwen_vl2.5_try.jpg"}   
+                    "image_url": {"url": "https://raw.githubusercontent.com/invisible30/test-qwen_vl-2.5/main/qwen_vl2.5_try.jpg"} 
+                    # 在github网页上直接复制过来的网址是https://github.com/invisible30/test-qwen_vl-2.5/blob/main/qwen_vl2.5_try.jpg
+                    # 需要改成代码中的形式  
                 }, 
                 {   "type": "text",    
                     # "text": "Count the number of birds in the figure, including those that are only showing their heads. To ensure accuracy, first detect their key points, then give the total number."                
